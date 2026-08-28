@@ -1,7 +1,6 @@
 # End-to-End Implementation Guide — AI Image Quality & Defect Detection
 
 **Version:** 1.0.0 | **Seed:** 42 | **Date:** 2026-08-28
-**Author:** Senior Full-Stack / CV / ML / MLOps Engineer (48h assessment)
 
 This guide is the single source of truth for reproducing, understanding, and extending the project. It explains every architectural decision, the real-world dataset upgrade, and the SQLite verification that guarantees persistence.
 
@@ -98,7 +97,7 @@ python verify_sqlite.py   # see §7.4
                                               └─────────────┘
 ```
 
-### 2.2 Mermaid (paste into GitHub)
+### 2.2 Mermaid design
 ```mermaid
 graph TD
   U[Browser] --> F[React Frontend<br/>:3000 Nginx / :5173 Vite]
