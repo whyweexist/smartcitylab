@@ -1,0 +1,88 @@
+{
+  "blur": {
+    "precision": 0.6818181818181818,
+    "recall": 0.75,
+    "f1": 0.7142857142857143
+  },
+  "underexposure": {
+    "precision": 0.9166666666666666,
+    "recall": 0.8148148148148148,
+    "f1": 0.8627450980392157
+  },
+  "overexposure": {
+    "precision": 0.6428571428571429,
+    "recall": 0.6428571428571429,
+    "f1": 0.6428571428571429
+  },
+  "noise": {
+    "precision": 0.7916666666666666,
+    "recall": 0.9047619047619048,
+    "f1": 0.8444444444444444
+  },
+  "severe_degradation": {
+    "precision": 0.5416666666666666,
+    "recall": 0.6842105263157895,
+    "f1": 0.6046511627906976
+  },
+  "potential_defect": {
+    "precision": 0.7,
+    "recall": 0.28,
+    "f1": 0.4
+  },
+  "macro_f1": 0.6781639270695359,
+  "micro_f1": 0.6911764705882353,
+  "quality_accuracy": 0.6031746031746031,
+  "quality_macro_f1": 0.44290192566054637,
+  "confusion_matrix": [
+    [
+      1,
+      24,
+      2
+    ],
+    [
+      1,
+      60,
+      9
+    ],
+    [
+      0,
+      14,
+      15
+    ]
+  ],
+  "classification_report": {
+    "ACCEPTABLE": {
+      "precision": 0.5,
+      "recall": 0.037037037037037035,
+      "f1-score": 0.06896551724137931,
+      "support": 27.0
+    },
+    "DEGRADED": {
+      "precision": 0.6122448979591837,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.7142857142857143,
+      "support": 70.0
+    },
+    "POTENTIALLY_DEFECTIVE": {
+      "precision": 0.5769230769230769,
+      "recall": 0.5172413793103449,
+      "f1-score": 0.5454545454545454,
+      "support": 29.0
+    },
+    "accuracy": 0.6031746031746031,
+    "macro avg": {
+      "precision": 0.5630559916274201,
+      "recall": 0.4704737578300797,
+      "f1-score": 0.44290192566054637,
+      "support": 126.0
+    },
+    "weighted avg": {
+      "precision": 0.5800627943485086,
+      "recall": 0.6031746031746031,
+      "f1-score": 0.5371448474896751,
+      "support": 126.0
+    }
+  },
+  "baseline_macro_f1": 0.510389217209475,
+  "baseline_micro_f1": 0.49221183800623053
+}

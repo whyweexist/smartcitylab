@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/data/app.db
+      - UPLOAD_DIR=/app/data/uploads
+      - MODEL_PATH=/app/backend/artifacts/model.joblib
+      - ALLOWED_ORIGINS=*
+      - PYTHONPATH=/app/backend
+    volumes:
+      - app_data:/app/data
+      - ./backend/artifacts:/app/backend/artifacts:ro
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  app_data:
